@@ -173,6 +173,10 @@ html{
         padding-left: 0px;
         border-bottom: 0px;
     }
+    .sticky{
+        height: 110px;
+    font-size: 26px;
+    }
     .content{
         
         padding-top: 100px;
