@@ -1,0 +1,188 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    padding:0;
+    margin:0;
+}
+:root{--navbar-height: 59px}
+.pfp{
+    height: 45px;
+    border-radius: 25px;
+    margin-top: 12px;
+    margin-left: 16px;
+    margin-bottom: 9px;
+}
+.sticky{
+    position: fixed;
+    width: 100%;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    font-family: 'Secular One', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 15;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+#navbar ul li{
+    list-style: none;
+}
+#navbar ul li a{
+    color:white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color: aliceblue;
+}
+
+
+/*home section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 750px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('pexels-robin-stickel-70497.jpg') no-repeat center center/cover;
+    height: 123%;
+    width:100%;
+    z-index: -1;
+    opacity:0.89;
+}
+.h-primary{
+    color: rgb(255, 255, 255);
+    font-size: 87px;
+    font-family: 'Secular One', sans-serif;}
+
+.content{
+    font-family: 'Secular One', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+}
+.btn{
+    border-radius: 6px;
+    padding: 10px 20px;
+    background-color: rgb(139, 28, 28);
+    color: white;
+    margin: 10px;
+    font-size: 19px;
+    cursor: pointer;
+}
+.servicesclass{
+    color: rgb(179, 31, 31);
+    font-size: 87px;
+    text-align: center;
+    margin-top: 130px;
+    padding-top: 100px;
+    font-family: 'Secular One', sans-serif;
+}
+.container{
+    display: flex;
+    height: 400px;
+    width: 100%;
+    border-radius: 18px;
+    
+}
+.service{
+    background-color: rgb(250, 242, 242);
+    border: 2px solid rgb(94, 9, 15);
+    margin: 10px;
+    padding: 3px;
+    width: 100%;
+    text-align: center;
+    border-radius: 18px;
+}
+.pizslice{
+    height: 199px;
+    padding-left: 19px;
+    padding-top: 10px;
+}
+.servhead{
+    font-family: 'Secular One', sans-serif;
+    color: rgb(177, 78, 78);
+    font-size: 28px;
+}
+.clients{
+    color: rgb(179, 31, 31);
+    font-size: 87px;
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 100px;
+    font-family: 'Secular One', sans-serif;
+}
+.cunt{
+    display: flex;
+    height: 400px;
+    width: 100%;
+    border-radius: 18px;
+}
+.emma{
+    background-color: rgb(238, 229, 229);
+    border: 2px solid rgb(94, 9, 15);
+    margin: 10px;
+    padding: 3px;
+    width: 100%;
+    text-align: center;
+    border-radius: 18px;
+}
+
+.foot{
+    align-items: center;
+    text-align: center;
+    padding-bottom: 40px;
+    background-color: rgb(52, 52, 52);
+    color: rgb(244, 249, 249);
+    width: 100%;
+    margin-right: 0px;
+}
+
+
+/* FOR RESPONSIVE WEBSITE */
+@media only screen and (max-width:1672px){
+    /* body{
+        background-color: red;
+    } */
+    
+    
+    .container{
+        flex-direction: column;
+    }
+    .cunt{
+        flex-direction: column;
+    }
+    .clientclass{
+        padding-top: 530px;
+    }
+    .foot{
+        margin-top: 850px;
+    }
+    #home::before{
+        height: 177%;
+    }
+    .h-primary{
+        margin-top: 67px;
+    }
+    
+}

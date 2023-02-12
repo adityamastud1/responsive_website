@@ -1,0 +1,13 @@
+body{
+    background-color: rgb(8, 8, 8);
+}
+
+/* home */
+/* navigation bar */
+
+/* services box */
+.service{
+    flex-direction: column;
+}
+/* clients */
+/* contactus */
